@@ -1,0 +1,5 @@
+# This project uses only Python Standard Library modules (like 'datetime').
+# No external dependencies or advanced AI packages (like 'openai' or 'nltk') are required.
+# 
+# To run the chatbot, simply execute:
+# python chatbot.py
