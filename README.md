@@ -11,7 +11,7 @@ During this internship, I developed several Python applications to strengthen my
 |------|--------------|-------------|--------|
 | **1** | [Hangman Game](./Hangman_Game) | A text-based console game using standard Python logic and concepts like loops and string manipulation. | ✅ Completed |
 | **2** | [Stock Portfolio Tracker](./Stock_Portfolio_Tracker) | A command-line financial tool to track stock investments, calculate values, and export data to CSV. | ✅ Completed |
-| **3** | *Upcoming Project* | *Description to be added* | ⏳ Pending |
+| **3** | [Email Extractor Automation](./Email_Extractor_Automation) | A Python automation script using regular expressions to extract unique email addresses from text files. | ✅ Completed |
 | **4** | *Upcoming Project* | *Description to be added* | ⏳ Pending |
 
 ## 🛠️ Technologies Used

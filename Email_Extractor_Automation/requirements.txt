@@ -1,0 +1,5 @@
+# This project uses only Python Standard Library modules (like 're' and 'os').
+# No external dependencies or packages are required to run this script.
+# 
+# To run the script, simply execute:
+# python email_extractor.py

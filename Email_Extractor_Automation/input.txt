@@ -1,0 +1,10 @@
+Hello Team,
+
+Please review the latest project documents. If you have any questions, you can contact our main support channel at support@example.com.
+
+For technical issues, reach out to admin@test.org.
+Don't forget to CC contact@company.in on all external communications.
+
+Also, someone from Support@Example.com (yes, the same email) called earlier.
+
+Thanks!
