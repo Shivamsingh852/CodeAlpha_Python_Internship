@@ -1,0 +1,5 @@
+# This project uses only Python Standard Library modules (like 'csv' and 'os').
+# No external dependencies or third-party APIs (like 'requests' or 'pandas') are required.
+# 
+# To run the tracker, simply execute:
+# python portfolio_tracker.py

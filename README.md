@@ -10,7 +10,7 @@ During this internship, I developed several Python applications to strengthen my
 | Task | Project Name | Description | Status |
 |------|--------------|-------------|--------|
 | **1** | [Hangman Game](./Hangman_Game) | A text-based console game using standard Python logic and concepts like loops and string manipulation. | ✅ Completed |
-| **2** | *Upcoming Project* | *Description to be added* | ⏳ Pending |
+| **2** | [Stock Portfolio Tracker](./Stock_Portfolio_Tracker) | A command-line financial tool to track stock investments, calculate values, and export data to CSV. | ✅ Completed |
 | **3** | *Upcoming Project* | *Description to be added* | ⏳ Pending |
 | **4** | *Upcoming Project* | *Description to be added* | ⏳ Pending |
 
