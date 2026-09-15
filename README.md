@@ -20,4 +20,4 @@ During this internship, I developed several Python applications to strengthen my
 * **Version Control:** Git & GitHub
 
 ## 👨‍💻 Author
-* **[Your Name]** - Python Development Intern at CodeAlpha.
+* **[Shivam Singh]** - Python Development Intern at CodeAlpha.
