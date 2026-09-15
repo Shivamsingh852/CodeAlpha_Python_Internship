@@ -16,7 +16,6 @@ def read_file(filepath):
 
 def extract_emails(text):
     """Extracts email addresses from text using a regular expression."""
-    
     email_pattern = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
     emails = re.findall(email_pattern, text)
     return emails
@@ -75,20 +74,15 @@ def main():
     print(f"\nReading file: {input_file}")
     
     try:
-        
         content = read_file(input_file)
-        
         
         print("Searching for email addresses...")
         raw_emails = extract_emails(content)
         
-     
         unique_emails = remove_duplicates(raw_emails)
         
-       
         display_results(unique_emails, output_file)
         
-       
         if unique_emails:
             save_emails(output_file, unique_emails)
             

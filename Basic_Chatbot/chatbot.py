@@ -2,14 +2,11 @@ import datetime
 
 def get_response(user_input):
     """Returns a predefined response based on the user's input."""
-    # Normalize input: convert to lowercase and remove extra spaces
     user_input = user_input.lower().strip()
     
-    # Handle empty input
     if not user_input:
         return "Please say something! Type 'help' if you're not sure what to say."
         
-    # Rule-based conditions checking for exact matches or keywords
     if user_input in ["hello", "hi", "hey", "greetings"]:
         return "Hi there! Nice to meet you. How can I help you today?"
         
@@ -37,7 +34,6 @@ def get_response(user_input):
         return display_help()
         
     else:
-        # Fallback response for unknown inputs
         return "Sorry, I don't understand that yet. Type 'help' to see what I can answer."
 
 def display_help():
@@ -64,28 +60,22 @@ def chat():
     print("Bot: Type 'help' to see what I can do.")
     print("Bot: Type 'bye', 'exit', or 'quit' to exit.\n")
     
-    # Continuous conversation loop
     while True:
         try:
-            # Read user input
             user_input = input("You: ")
             
-            # Check for exit commands first before processing rules
             clean_input = user_input.lower().strip()
             if clean_input in ["bye", "exit", "quit", "goodbye"]:
                 print("Bot: Goodbye! Have a great day!")
                 break
                 
-            # Get and print the response
             response = get_response(user_input)
             print(f"Bot: {response}\n")
             
         except (KeyboardInterrupt, EOFError):
-            # Gracefully handle if the user presses Ctrl+C to force quit
             print("\nBot: Goodbye! Have a great day!")
             break
         except Exception as e:
-            # Prevent the program from crashing due to unexpected errors
             print(f"Bot: Oops! Something went wrong: {e}")
 
 def main():

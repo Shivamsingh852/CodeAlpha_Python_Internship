@@ -1,6 +1,5 @@
 import csv
 
-# Hardcoded dictionary containing several stock symbols and their predefined prices
 STOCKS = {
     "AAPL": 180.0,
     "TSLA": 250.0,
@@ -48,8 +47,6 @@ def add_stock(portfolio):
         print("Error: Invalid quantity. Please enter a numeric value.")
         return
 
-    # Add or update the stock in the portfolio dictionary
-    # If the stock already exists, we combine the quantities
     if symbol in portfolio:
         portfolio[symbol] += quantity
         print(f"Updated {symbol} quantity to {portfolio[symbol]:.2f}.")
@@ -98,24 +95,20 @@ def save_portfolio(portfolio):
     filename = "portfolio.csv"
     
     try:
-        # Using context manager 'with' to ensure the file is properly closed
         with open(filename, mode='w', newline='') as file:
             writer = csv.writer(file)
             
-            # Write header row
             writer.writerow(["Stock", "Price", "Quantity", "Value"])
             
             total_investment = 0.0
             
-            # Write data rows
             for symbol, quantity in portfolio.items():
                 price = STOCKS[symbol]
                 value = price * quantity
                 total_investment += value
                 writer.writerow([symbol, price, quantity, value])
             
-            # Write total row at the bottom
-            writer.writerow([]) # Empty row for spacing
+            writer.writerow([]) 
             writer.writerow(["Total Investment", "", "", total_investment])
             
         print(f"\nPortfolio successfully saved to '{filename}'!")
@@ -124,7 +117,6 @@ def save_portfolio(portfolio):
 
 def main():
     """Main function to run the program loop."""
-    # Dictionary to hold user's portfolio in format { 'AAPL': 5.0, 'TSLA': 2.0 }
     portfolio = {} 
     
     while True:

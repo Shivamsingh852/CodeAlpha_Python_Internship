@@ -1,6 +1,5 @@
 import random
 
-
 WORDS = ["python", "internship", "programming", "developer", "software"]
 
 def choose_word():
@@ -45,11 +44,9 @@ def play_game():
         print(f"\nWord: {display_word(word, guessed_letters)}")
         print(f"Incorrect guesses: {incorrect_guesses}/{max_incorrect_guesses}")
         
-    
         guessed_display = ", ".join(sorted(guessed_letters)) if guessed_letters else "None"
         print(f"Guessed letters: {guessed_display}\n")
 
-       
         if all(letter in guessed_letters for letter in word):
             print("Congratulations! You guessed the word correctly!")
             print(f"The word was: {word}")
@@ -60,7 +57,6 @@ def play_game():
 
         if guess in word:
             print(f"\nGood job! '{guess}' is in the word.")
-          
             if all(letter in guessed_letters for letter in word):
                 print(f"\nWord: {display_word(word, guessed_letters)}")
                 print("Congratulations! You guessed the word correctly!")
@@ -70,7 +66,6 @@ def play_game():
             print(f"\nSorry, '{guess}' is not in the word.")
             incorrect_guesses += 1
 
-    
     print(f"\nWord: {display_word(word, guessed_letters)}")
     print(f"Incorrect guesses: {incorrect_guesses}/{max_incorrect_guesses}")
     print("\nGame Over! You've reached the maximum number of incorrect guesses.")
