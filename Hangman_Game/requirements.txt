@@ -1,0 +1,5 @@
+# This project uses only Python Standard Library modules.
+# No external dependencies or packages are required to run this game.
+# 
+# To run the game, simply execute:
+# python hangman.py
